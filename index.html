@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
     <nav id="principal">
@@ -22,5 +22,56 @@
         </div>
         <button>Login</button>
     </nav>
+
+    <section> <!--cria uma seção da página-->
+        <header>
+            <h1>Bootcamp DNC</h1>
+            <h2>
+                Esse será um evento exclusivo para todos os alunos <br>
+                da <b>DNC</b>, que querem <span class="invert">acelerar a carreira</span> com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </h2>
+        </header>
+
+        <form action="">
+            <div class="formGroup">
+                <label>Nome:</label>
+                <input type="text" placeholder="Insira seu nome aqui" name="nome">
+            </div>
+            <div class="formGroup">
+                <label>Sobrenome:</label>
+                <input type="text" placeholder="Insira seu sobrenome aqui" name="sobrenome">
+            </div>
+            <div class="formGroup">
+                <label>Área de Interesse:</label>
+                <div class="checkboxItens">
+                    <input type="checkbox" value="Front" name="area1">
+                    <label>Front-End</label>
+                </div>
+                <div class="checkboxItens">
+                    <input type="checkbox" value="Back" name="area2">
+                    <label>Back-End</label>
+                </div>
+                <div class="checkboxItens">
+                    <input type="checkbox" value="Data" name="area3">
+                    <label>Banco de Dados</label>
+                </div>
+            </div>
+            <div class="formGroup">
+                <label>Email:</label>
+                <input type="email" placeholder="Insira seu e-mail aqui" name="email">
+            </div>
+            <div class="formGroup">
+                <label>Telefone:</label>
+                <input type="text" placeholder="(99) 99999-9999" name="tel">
+            </div>
+            <div class="formGroup">
+                <label>Insira uma frase criativa aqui:</label>
+                <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)" name="frase">
+            </div>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
 </body>
 </html>
